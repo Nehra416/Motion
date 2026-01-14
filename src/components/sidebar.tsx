@@ -92,7 +92,7 @@ const Sidebar = () => {
                                     <a
                                         href={link.href}
                                         title={!open ? link.name : undefined}
-                                        className="flex items-center gap-2 p-2 text-gray-700 rounded hover:bg-gray-200"
+                                        className="flex items-center gap-2 p-2 text-gray-600 font hover:text-black rounded hover:bg-gray-100"
                                     >
                                         {link.icon}
                                         {open && <span className="ml-1">{link.name}</span>}
