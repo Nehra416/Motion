@@ -1,12 +1,16 @@
 import Btn from "./components/btn"
 import Card from "./components/card"
+import Sidebar from "./components/sidebar"
 
 function App() {
 
   return (
     <div>
       {/* <Btn /> */}
-      <Card />
+      <div className="flex bg-neutral-100">
+        <Sidebar />
+        <Card />
+      </div>
     </div>
   )
 }
