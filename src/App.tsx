@@ -1,5 +1,6 @@
 import Btn from "./components/btn"
 import Card from "./components/card"
+import LayoutCards from "./components/layoutCards"
 import MovingComponent from "./components/movingComponent"
 import Sidebar from "./components/sidebar"
 
@@ -13,7 +14,8 @@ function App() {
         <Sidebar />
         <Card />
       </div> */}
-      <MovingComponent />
+      {/* <MovingComponent /> */}
+      <LayoutCards />
     </div>
   )
 }
