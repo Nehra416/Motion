@@ -47,8 +47,9 @@ const AnimationSequences = () => {
         )
         animate("button",
             {
-                scale: [1, 1.2, 0.8, 1],
-                backgroundImage: "linear-gradient(to right, #00ff99, #00ccff)"
+                scale: [1, 1.06, 0.98, 1],
+                backgroundImage: "linear-gradient(to right, #159957, #1DB954)",
+                boxShadow: ["0px 5px 20px rgba(29, 185, 84, 0.55)"]
             },
             { duration: 0.8 }
         )
@@ -66,11 +67,17 @@ const AnimationSequences = () => {
         <div ref={scope}>
             <motion.button
                 onClick={startAnimating}
+                whileHover={{
+                    boxShadow: "0px 6px 24px rgba(44, 83, 100, 0.45)"
+                }}
+                whileTap={{
+                    scale: 0.98
+                }}
                 style={{
                     width: "20rem"
                 }}
                 // py-5 px-10 this will create problem in animate, pura shrink nahi hoga
-                className="h-16 rounded-lg flex items-center justify-center gap-3 bg-gradient-to-r from-purple-500 via-violet-600 to-indigo-500 text-white font-medium cursor-pointer"
+                className="h-16 rounded-lg flex items-center justify-center gap-3 bg-gradient-to-r from-[#0F2027] via-[#203A43] to-[#2C5364] text-white font-medium cursor-pointer"
             >
                 {/* Loader SVG */}
                 <motion.svg width="20" height="20" viewBox="0 0 50 50"
